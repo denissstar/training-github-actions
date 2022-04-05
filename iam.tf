@@ -2,8 +2,8 @@ resource "aws_iam_role" "lambda_role" {
   name               = "nif-lambda-execution-role"
   assume_role_policy = data.aws_iam_policy_document.trust_policy.json
   tags = {
-    "Name": "nif-lambda-execution-role",
-    "Env": var.environment
+    "Name" : "nif-lambda-execution-role",
+    "Env" : var.environment
   }
 }
 
